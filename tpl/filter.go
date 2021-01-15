@@ -8,7 +8,6 @@ import (
 	"math"
 	"strconv"
 	"strings"
-	"time"
 )
 
 // 向下取整
@@ -67,7 +66,7 @@ func prefix(in *pongo2.Value, param *pongo2.Value) (out *pongo2.Value, err *pong
 // 字串 支持负数
 func substr(in *pongo2.Value, param *pongo2.Value) (out *pongo2.Value, err *pongo2.Error) {
 	val := in.String()
-	token := strings.Split(":", param.String())
+	token := strings.Split(param.String(), ":")
 
 	if len(token) != 2 {
 		return pongo2.AsValue(""), nil
@@ -87,7 +86,7 @@ func substr(in *pongo2.Value, param *pongo2.Value) (out *pongo2.Value, err *pong
 		return pongo2.AsValue(""), nil
 	}
 
-	return pongo2.AsValue(token[begin:end]), nil
+	return pongo2.AsValue(val[begin:end]), nil
 }
 
 // json 格式化
@@ -100,12 +99,9 @@ func jsonFormat(in *pongo2.Value, param *pongo2.Value) (out *pongo2.Value, err *
 	return pongo2.AsValue(string(data)), nil
 }
 
+// md5
 func md5Sum(in *pongo2.Value, param *pongo2.Value) (out *pongo2.Value, err *pongo2.Error) {
 	return pongo2.AsValue(util.Md5([]byte(in.String()))), nil
-}
-
-func timeNow(in *pongo2.Value, param *pongo2.Value) (out *pongo2.Value, err *pongo2.Error) {
-	return pongo2.AsValue(time.Now()), nil
 }
 
 // 四舍五入
@@ -126,6 +122,5 @@ var commonFilterFuncs = map[string]pongo2.FilterFunction{
 	"substr":  substr,
 	"md5":     md5Sum,
 	"json":    jsonFormat,
-	"timeNow": timeNow,
 	"round":   round,
 }

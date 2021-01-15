@@ -1,0 +1,17 @@
+<html>
+<head>
+</head>
+<h1>{{ head }}</h1>
+<p> {{ floatdata | floor  }} </p>
+<p> {{ mapdata | index:"abc"}} </p>
+<p> {{ slicedata | index: 2  }} </p>
+<p> {{ stringdata | replace: "abc,def"  }} </p>
+<p> {{ stringdata | replace: "abc,def,2"  }} </p>
+<p> {{ stringdata | cat:"abc"}} </p>
+<p> {{ stringdata | prefix:"abc"}} </p>
+<p> {{ stringdata | substr:"0:3" }} </p>
+<p> {{ stringdata | substr:"0:-3" }} </p>
+<p> {{ stringdata | substr:"-3:-1" }} </p>
+<p> {{ jsondata   | json | safe}} </p>
+<p> {{ stringdata    | md5 }} </p>
+</html>
