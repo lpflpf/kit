@@ -2,7 +2,6 @@ package tpl
 
 import (
 	"bytes"
-	"e.360.cn/brandad/com/config"
 	"github.com/flosch/pongo2"
 	"io"
 	"io/ioutil"
@@ -31,9 +30,6 @@ func Init(path string) {
 		return nil
 	})
 
-	if config.Debug() {
-		pongo2.DefaultSet.Debug = true
-	}
 }
 
 // 模板渲染
