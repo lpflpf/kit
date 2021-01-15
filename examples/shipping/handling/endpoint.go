@@ -4,11 +4,11 @@ import (
 	"context"
 	"time"
 
-	"github.com/go-kit/kit/endpoint"
+	"github.com/lpflpf/kit/endpoint"
 
-	"github.com/go-kit/kit/examples/shipping/cargo"
-	"github.com/go-kit/kit/examples/shipping/location"
-	"github.com/go-kit/kit/examples/shipping/voyage"
+	"github.com/lpflpf/kit/examples/shipping/cargo"
+	"github.com/lpflpf/kit/examples/shipping/location"
+	"github.com/lpflpf/kit/examples/shipping/voyage"
 )
 
 type registerIncidentRequest struct {

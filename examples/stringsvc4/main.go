@@ -9,9 +9,9 @@ import (
 	"flag"
 	"net/http"
 
-	"github.com/go-kit/kit/endpoint"
-	natstransport "github.com/go-kit/kit/transport/nats"
-	httptransport "github.com/go-kit/kit/transport/http"
+	"github.com/lpflpf/kit/endpoint"
+	natstransport "github.com/lpflpf/kit/transport/nats"
+	httptransport "github.com/lpflpf/kit/transport/http"
 
 	"github.com/nats-io/nats.go"
 )

@@ -4,8 +4,8 @@ import (
 	"context"
 	"errors"
 
-	"github.com/go-kit/kit/log"
-	"github.com/go-kit/kit/metrics"
+	"github.com/lpflpf/kit/log"
+	"github.com/lpflpf/kit/metrics"
 )
 
 // Service describes a service that adds things together.

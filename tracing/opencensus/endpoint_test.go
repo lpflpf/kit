@@ -8,10 +8,10 @@ import (
 
 	"go.opencensus.io/trace"
 
-	"github.com/go-kit/kit/endpoint"
-	"github.com/go-kit/kit/sd"
-	"github.com/go-kit/kit/sd/lb"
-	"github.com/go-kit/kit/tracing/opencensus"
+	"github.com/lpflpf/kit/endpoint"
+	"github.com/lpflpf/kit/sd"
+	"github.com/lpflpf/kit/sd/lb"
+	"github.com/lpflpf/kit/tracing/opencensus"
 )
 
 const (

@@ -6,7 +6,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/go-kit/kit/log"
+	"github.com/lpflpf/kit/log"
 	"github.com/sirupsen/logrus"
 )
 

@@ -6,7 +6,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/go-kit/kit/log"
+	"github.com/lpflpf/kit/log"
 )
 
 func TestSwapLogger(t *testing.T) {

@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/go-kit/kit/metrics"
+	"github.com/lpflpf/kit/metrics"
 )
 
 func instrumentingMiddleware(

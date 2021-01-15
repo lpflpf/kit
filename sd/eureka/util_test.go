@@ -7,7 +7,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/go-kit/kit/log"
+	"github.com/lpflpf/kit/log"
 	"github.com/hudl/fargo"
 )
 

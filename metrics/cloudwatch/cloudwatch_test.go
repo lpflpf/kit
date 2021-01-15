@@ -10,9 +10,9 @@ import (
 	"github.com/aws/aws-sdk-go/service/cloudwatch"
 	"github.com/aws/aws-sdk-go/service/cloudwatch/cloudwatchiface"
 
-	"github.com/go-kit/kit/log"
-	"github.com/go-kit/kit/metrics"
-	"github.com/go-kit/kit/metrics/teststat"
+	"github.com/lpflpf/kit/log"
+	"github.com/lpflpf/kit/metrics"
+	"github.com/lpflpf/kit/metrics/teststat"
 )
 
 const metricNameToGenerateError = "metric_name_used_to_throw_an_error"

@@ -3,7 +3,7 @@ package tracking
 import (
 	"time"
 
-	"github.com/go-kit/kit/metrics"
+	"github.com/lpflpf/kit/metrics"
 )
 
 type instrumentingService struct {

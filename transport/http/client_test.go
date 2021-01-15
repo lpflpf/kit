@@ -13,7 +13,7 @@ import (
 	"testing"
 	"time"
 
-	httptransport "github.com/go-kit/kit/transport/http"
+	httptransport "github.com/lpflpf/kit/transport/http"
 )
 
 type TestResponse struct {

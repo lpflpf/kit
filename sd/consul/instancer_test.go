@@ -7,8 +7,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/go-kit/kit/log"
-	"github.com/go-kit/kit/sd"
+	"github.com/lpflpf/kit/log"
+	"github.com/lpflpf/kit/sd"
 )
 
 var _ sd.Instancer = (*Instancer)(nil) // API check

@@ -16,22 +16,22 @@ import (
 	"syscall"
 	"time"
 
-	consulsd "github.com/go-kit/kit/sd/consul"
+	consulsd "github.com/lpflpf/kit/sd/consul"
 	"github.com/gorilla/mux"
 	"github.com/hashicorp/consul/api"
 	stdopentracing "github.com/opentracing/opentracing-go"
 	stdzipkin "github.com/openzipkin/zipkin-go"
 	"google.golang.org/grpc"
 
-	"github.com/go-kit/kit/endpoint"
-	"github.com/go-kit/kit/log"
-	"github.com/go-kit/kit/sd"
-	"github.com/go-kit/kit/sd/lb"
-	httptransport "github.com/go-kit/kit/transport/http"
+	"github.com/lpflpf/kit/endpoint"
+	"github.com/lpflpf/kit/log"
+	"github.com/lpflpf/kit/sd"
+	"github.com/lpflpf/kit/sd/lb"
+	httptransport "github.com/lpflpf/kit/transport/http"
 
-	"github.com/go-kit/kit/examples/addsvc/pkg/addendpoint"
-	"github.com/go-kit/kit/examples/addsvc/pkg/addservice"
-	"github.com/go-kit/kit/examples/addsvc/pkg/addtransport"
+	"github.com/lpflpf/kit/examples/addsvc/pkg/addendpoint"
+	"github.com/lpflpf/kit/examples/addsvc/pkg/addservice"
+	"github.com/lpflpf/kit/examples/addsvc/pkg/addtransport"
 )
 
 func main() {
